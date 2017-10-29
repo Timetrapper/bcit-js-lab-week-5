@@ -6,75 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab 5 - Three</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style1.css" type="text/css">
-
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link type="text/css" rel="stylesheet" id="jssDefault" href="css/theme1.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="jQuery.style.switcher.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            // style1
-            $("#style1").click(function () {
-                $("link[rel=stylesheet]").attr({
-                    href: "style1.css"
-                });
-            });
-
-            // style2
-            $("#style2").click(function () {
-                $("link[rel=stylesheet]").attr({
-                    href: "style2.css"
-                });
-            });
-
-            // style3
-            $("#style3").click(function () {
-                $("link[rel=stylesheet]").attr({
-                    href: "style3.css"
-                });
-            });
+            $('#styleOptions').styleSwitcher();
         });
     </script>
 </head>
 
 <body>
-    <div id="css_toggle">
-        <ul>
-            <li>
-                <a id="style1" href="#css-style1">Style1</a>
-            </li>
-            <li>
-                <a id="style2" href="#css-style2">Style2</a>
-            </li>
-            <li>
-                <a id="style3" href="#css-style3">Style3</a>
-            </li>
-        </ul>
+    <ul id="styleOptions" title="switch styling">
+        <li>
+            <a href="javascript: void(0)" data-theme="theme1">Default</a>
+        </li>
+        <li>
+            <a href="javascript: void(0)" data-theme="theme2">Darkness</a>
+        </li>
+        <li>
+            <a href="javascript: void(0)" data-theme="theme3">Colorful</a>
+        </li>
+        <li>
+            <a href="javascript: void(0)" data-theme="theme4">Large Print</a>
+        </li>
+    </ul>
+    <div id="primary">
+        <header>
+            <h1>Cat Facts</h1>
+            <h2>Their History</h2>
+        </header>
+        <main>
+            <p>All the cats in this genus share a common ancestor that is believed to have lived around 6–7 million years ago
+                in the Near East (the Middle East). The exact relationships within the Felidae are close but still uncertain,
+                e.g. the Chinese mountain cat is sometimes classified (under the name Felis silvestris bieti) as a subspecies
+                of the wildcat, like the North African variety F. s. lybica. Ancient Egyptian sculpture of the cat goddess
+                Bastet. The earliest evidence of felines as Egyptian deities comes from a c. 3100 BC.</p>
+            <br>
+            <p>In comparison to dogs, cats have not undergone major changes during the domestication process, as the form and
+                behavior of the domestic cat is not radically different from those of wildcats and domestic cats are perfectly
+                capable of surviving in the wild. Fully domesticated house cats often interbreed with feral F. catus populations,
+                producing hybrids such as the Kellas cat. This limited evolution during domestication means that hybridisation
+                can occur with many other felids, notably the Asian leopard cat. Several natural behaviors and characteristics
+                of wildcats may have predisposed them for domestication as pets. These traits include their small size, social
+                nature, obvious body language, love of play and relatively high intelligence. 12–17 Several small felid species
+                may have an inborn tendency towards tameness.
+            </p>
+            <br>
+            <p>Cats have either a mutualistic or commensal relationship with humans. Two main theories are given about how cats
+                were domesticated. In one, people deliberately tamed cats in a process of artificial selection as they were
+                useful predators of vermin. This has been criticized as implausible, because the reward for such an effort
+                may have been too little; cats generally do not carry out commands and although they do eat rodents, other
+                species such as ferrets or terriers may be better at controlling these pests. The alternative idea is that
+                cats were simply tolerated by people and gradually diverged from their wild relatives through natural selection,
+                as they adapted to hunting the vermin found around humans in towns and villages.</p>
+        </main>
     </div>
-
-    <h1>Cat Facts</h1>
-    <h2>Their History</h2>
-    <p>All the cats in this genus share a common ancestor that is believed to have lived around 6–7 million years ago in the
-        Near East (the Middle East). The exact relationships within the Felidae are close but still uncertain, e.g. the Chinese
-        mountain cat is sometimes classified (under the name Felis silvestris bieti) as a subspecies of the wildcat, like
-        the North African variety F. s. lybica. Ancient Egyptian sculpture of the cat goddess Bastet. The earliest evidence
-        of felines as Egyptian deities comes from a c. 3100 BC.</p>
-
-    <p>In comparison to dogs, cats have not undergone major changes during the domestication process, as the form and behavior
-        of the domestic cat is not radically different from those of wildcats and domestic cats are perfectly capable of
-        surviving in the wild. Fully domesticated house cats often interbreed with feral F. catus populations, producing
-        hybrids such as the Kellas cat. This limited evolution during domestication means that hybridisation can occur with
-        many other felids, notably the Asian leopard cat. Several natural behaviors and characteristics of wildcats may have
-        predisposed them for domestication as pets. These traits include their small size, social nature, obvious body language,
-        love of play and relatively high intelligence. 12–17 Several small felid species may have an inborn tendency towards
-        tameness.
-    </p>
-
-    <p>Cats have either a mutualistic or commensal relationship with humans. Two main theories are given about how cats were
-        domesticated. In one, people deliberately tamed cats in a process of artificial selection as they were useful predators
-        of vermin. This has been criticized as implausible, because the reward for such an effort may have been too little;
-        cats generally do not carry out commands and although they do eat rodents, other species such as ferrets or terriers
-        may be better at controlling these pests. The alternative idea is that cats were simply tolerated by people and gradually
-        diverged from their wild relatives through natural selection, as they adapted to hunting the vermin found around
-        humans in towns and villages.</p>
 </body>
 
 </html>
